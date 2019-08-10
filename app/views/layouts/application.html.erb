@@ -58,8 +58,12 @@
                 class: 'btn btn-xs btn-danger', title: 'Logout', :method => :delete) %></li>
             <% else %>
               <li class="col-md-4 pull-right">
-                <%= link_to('Sign In', new_user_session_path, class: 'btn btn-primary', title: 'Sign In') %>
+                <%= link_to('Sign In', new_user_session_path, class: 'btn btn-xs btn-primary', title: 'Sign In') %>
               </li>
+              <li class="col-md-4 pull-right">
+                <%= link_to('Sign Up',  new_user_registration_path, class: 'btn btn-xs btn-success', title: 'Sign Up') %>
+              </li>
+
             <% end %>
           </ul>
         </div>
